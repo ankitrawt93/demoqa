@@ -41,16 +41,13 @@ public class DemoSteps {
     @And("user lands on login page")
     public void userLandsOnLoginPage() {
         loginPage.isLoginPageLoaded();
-
     }
-
 
     @Then("user is able to login with the username {string} and password {string}")
     public void userIsAbleToLoginWithTheUsernameAndPassword(String username, String password) {
         loginPage.fillUserNameAndPwdAndclickLogin(username,password);
         Assert.assertTrue(profilePage.isProfilePageLoaded());
     }
-
 
     @And("user clicks on logout button")
     public void userClicksOnLogoutButton() {
