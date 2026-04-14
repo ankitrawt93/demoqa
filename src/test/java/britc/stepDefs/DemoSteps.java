@@ -24,13 +24,7 @@ public class DemoSteps {
     @When("User is on DemoQA login page")
     public void UserLandsOnDemoQaPage(){
         booksPagep.isBooksPageLoaded();
-
     }
-//
-//    @Then("Page title should show {string}")
-//    public void verifyPageTitle(String title){
-//        Assert.assertEquals(title,lp.getPageTitle());
-//    }
 
     @And("user clicks on login btn")
     public void userClicksOnLoginPage() {
